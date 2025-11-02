@@ -1,0 +1,32 @@
+.primary-button {
+    background: $blue-color;
+    font-size: $p-font-size;
+    display: inline-block;
+    color: $white-color;
+    border: none;
+    text-align: center;
+    line-height: 1;
+    font-weight: 700;
+    padding: 19.5px 35px;
+    border-radius: 9999px;
+    transition: all ease 0.4s;
+    cursor: pointer;
+}
+
+.secondary-button {
+    background: $light-blue;
+    font-size: $p-font-size;
+    display: inline-block;
+    color: $white-color;
+    border: none;
+    text-align: center;
+    line-height: 1; 
+    font-weight: 700;
+    padding: 19.5px 35px;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    &:hover{
+        background: $blue-color;
+    }
+}

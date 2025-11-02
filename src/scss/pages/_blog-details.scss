@@ -1,0 +1,83 @@
+section.blog-details {
+    padding: 150px 0;
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+    .blog-details-wrapper {
+        display: flex;
+        gap: 30px;
+        @media (max-width: 991px) {
+            flex-flow: wrap;
+        }
+        .blog-details-left {
+            width: calc(65% - 20px);
+            @media (max-width: 991px) {
+                width: 100%;
+            }
+            .blog-heading a {
+                display: none;
+            }
+            .text-box {
+                padding: 50px 60px;
+                background: #f3f6f7;
+                border-left: 6px solid $light-blue;
+                margin-bottom: 15px;
+                @media (max-width:767px) {
+                    padding: 30px;
+                }
+                h2 {
+                    font-size: 24px;
+                    color: $blue-color;
+                    line-height: 1.7;
+                    margin-bottom: 10px;
+                }
+                h3 {
+                    display: inline-block;
+                    font-size: 18px;
+                    position: relative;
+                    padding-left: 45px;
+                    border-color: inherit;
+                    line-height: 1;
+                    font-weight: 400;
+                    margin-top: 2px;
+                    font-style: normal;
+                    color: $light-blue;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: 7px;
+                        width: 30px;
+                        height: 2px;
+                        border-top: 2px solid;
+                        border-color: inherit;
+                    }
+                }
+            }
+            p{
+                font-size: 16px;
+                color: $grey-color;
+                line-height: 1.7;
+                margin-bottom: 20px;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            h6{
+                font-size: 36px;
+                font-family: $quicksand-font;
+                margin-bottom: 15px;
+                color: $blue-color;
+                margin-top: 15px;
+                font-weight: 800;
+            }
+        }
+        .blog-right {
+            width: calc(35% - 20px);
+            @media (max-width: 991px) {
+                width: 100%;
+            }
+        }
+    }
+}

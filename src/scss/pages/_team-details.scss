@@ -1,0 +1,302 @@
+section.team-details {
+    padding: 150px 0;
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+    .team-details-wrapper {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1024px) {
+            flex-wrap: wrap;
+        }
+        .team-details-dr-img {
+            width: calc(42% - 20px);
+            position: relative;
+            max-height: 604px;
+            @media (max-width: 1024px) {
+                width: 100%;
+                max-height: 100%;
+            }
+            img {
+                width: 100%;
+                @media (max-width: 1024px) {
+                    height: auto;
+                }
+            }
+            .dr-media-link {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                @media (max-width: 1500px) {
+                    top: 25px;
+                    left: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                .dr-box-img {
+                    @media (max-width: 1500px) {
+                        display: none;
+                    }
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                svg {
+                    fill: $blue-color;
+                    width: 15px;
+                    height: 18px;
+                }
+                span.share-icon {
+                    position: absolute;
+                    left: 272px;
+                    top: -15px;
+                    z-index: 111;
+                    width: 45px;
+                    height: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @media (max-width: 1500px) {
+                        position: static;
+                    }
+                    svg {
+                        fill: $white-color;
+                    }
+                    &::before {
+                        background: $white-color;
+                        content: "";
+                        position: absolute;
+                        left: -8px;
+                        top: -8px;
+                        right: -8px;
+                        bottom: -8px;
+                        border-radius: 50%;
+                        z-index: -1;
+                        width: 61px;
+                        height: 61px;
+                    }
+                    &::after {
+                        background: $blue-color;
+                        content: "";
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        right: -8px;
+                        bottom: -8px;
+                        border-radius: 50%;
+                        z-index: -1;
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+                .demo {
+                    a {
+                        position: absolute;
+                        background: $white-color;
+                        height: 45px;
+                        width: 45px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        @media (max-width: 1500px) {
+                            position: static;
+                            margin-top: 10px;
+                            transform: translateY(60px) rotate(90deg);
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+                        &:nth-child(1) {
+                            left: 170px;
+                            top: 50px;
+                        }
+                        &:nth-child(2) {
+                            left: 215px;
+                            top: 16px;
+                        }
+                        &:nth-child(3) {
+                            right: 105px;
+                            top: 5px;
+                        }
+                        &:nth-child(4) {
+                            right: 54px;
+                            top: 29px;
+                        }
+                    }
+                }
+            }
+        }
+        .team-details-dr-text {
+            width: calc(58% - 20px);
+            @media (max-width: 1024px) {
+                width: 100%;
+            }
+            .dr-name {
+                h3 {
+                    color: $blue-color;
+                    font-size: 36px;
+                    font-weight: 700;
+                    font-family: $quicksand-font;
+                    margin-bottom: 10px;
+                    line-height: 1.3;
+                }
+                p {
+                    font-size: 14px;
+                    color: $light-blue;
+                    margin-bottom: 15px;
+                    line-height: 1.7;
+                }
+            }
+            .dr-details {
+                margin-bottom: 30px;
+                p {
+                    font-size: 16px;
+                    line-height: 1.7;
+                    color: $grey-color;
+                    &:nth-child(1) {
+                        font-size: 18px;
+                        color: $blue-color;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .dr-ex-details {
+                display: flex;
+                border-radius: 5px;
+                &:nth-child(odd) {
+                    background: #f3f6f7;
+                }
+                .dr-ex-details-label {
+                    padding: 20px 30px;
+                    width: 30%;
+                    color: $blue-color;
+                    font-weight: 600;
+                }
+                .dr-ex-information {
+                    padding: 20px 30px;
+                    width: 70%;
+                    color: $grey-color;
+                    ul {
+                        li {
+                            display: flex;
+                            gap: 10px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dr-details-two {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        @media (max-width: 1024px) {
+            flex-flow: wrap;
+        }
+        .dr-details-two-left {
+            background: #f3f6f7;
+            padding: 60px 60px 58px 60px;
+            width: calc(42% - 20px);
+            height: 100%;
+            margin-top: -130px;
+            position: relative;
+            @media (max-width: 1024px) {
+                width: 100%;
+                margin-top: 0;
+            }
+            @media (max-width:767px) {
+                padding: 30px;
+            }
+            .dr-details-two-left-heading {
+                h3 {
+                    font-family: $quicksand-font;
+                    color: $blue-color;
+                    font-size: 24px;
+                    line-height: 1.3;
+                    margin-bottom: 30px;
+                    padding-bottom: 20px;
+                    font-weight: 700;
+                    position: relative;
+                    &::after {
+                        height: 3px;
+                        width: 50px;
+                        background: $light-blue;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        content: "";
+                    }
+                }
+            }
+            .time-main {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px dashed #dfdfe0;
+                padding: 9px;
+                font-size: 16px;
+                color: $grey-color;
+            }
+            .number-btn {
+                box-shadow: 0px 15px 65px 0px rgba(39, 71, 125, 0.06);
+                background: $white-color;
+                width: fit-content;
+                padding: 20px 50px;
+                margin: 0 auto;
+                border-radius: 999px;
+                position: absolute;
+                bottom: -35px;
+                transition: all ease 0.4s;
+                @media (max-width: 1024px) {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: flex;
+                    justify-content: center;
+                    width: 80%;
+                }
+                @media (max-width: 767px) {
+                    padding: 20px 30px;
+                }
+                &:hover {
+                    background: $blue-color;
+                }
+                &:hover a {
+                    color: $white-color;
+                }
+                &:hover svg {
+                    fill: $white-color;
+                }
+                a {
+                    font-size: 30px;
+                    color: $light-blue;
+                    font-weight: 700;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    @media (max-width: 767px) {
+                        font-size: 21px;
+                    }
+                    svg {
+                        fill: $light-blue;
+                        width: 30px;
+                        height: 30px;
+                        @media (max-width: 767px) {
+                            width: 21px;
+                            height: 21px;
+                        }
+                    }
+                }
+            }
+        }
+        .appointment-right {
+            width: calc(58% - 20px);
+            @media (max-width: 1024px) {
+                width: 100%;
+                margin-top: 80px;
+            }
+        }
+    }
+}

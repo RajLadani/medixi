@@ -1,0 +1,234 @@
+section.owp {
+    padding: 130px 0 100px;
+    background: url(../../public/img/owp-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+    .owp-heading {
+        text-align: center;
+        .title-icon {
+            border: 1px solid $light-blue;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 50%;
+            width: 66px;
+            height: 66px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::after {
+                content: "";
+                background: $light-blue;
+                height: 1px;
+                width: 48px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -50px;
+            }
+            &::before {
+                content: "";
+                background: $light-blue;
+                height: 1px;
+                width: 48px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -50px;
+            }
+            svg {
+                stroke: $light-blue !important;
+            }
+        }
+        .title {
+            h2 {
+                color: $white-color;
+            }
+        }
+        .text {
+            p {
+                color: #9fb3d5;
+            }
+        }
+    }
+    .owp-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 80px;
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+            row-gap: 50px;
+        }
+        .owp-box {
+            text-align: center;
+            width: 100%;
+            position: relative;
+            &:hover .owp-box-icon::before {
+                background: $light-blue;
+            }
+            &:hover .owp-box-icon svg {
+                stroke: $white-color;
+                fill: $white-color;
+            }
+            &:hover .owp-box-icon .box-number {
+                background: $white-color;
+            }
+            &:hover .owp-box-icon .box-number span {
+                color: $light-blue;
+            }
+            @media (max-width: 991px) {
+                width: calc(50% - 20px);
+            }
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+            .owp-box-icon {
+                position: relative;
+                border: 2px solid $white-color;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 150px;
+                height: 150px;
+                margin: 0 auto;
+                z-index: 1;
+                &::before {
+                    content: "";
+                    background: $white-color;
+                    position: absolute;
+                    left: 18px;
+                    right: 18px;
+                    top: 18px;
+                    bottom: 18px;
+                    border-radius: 50%;
+                    z-index: -1;
+                    transition: all ease 0.4s;
+                }
+                svg {
+                    fill: $light-blue;
+                    stroke: $light-blue;
+                    transition: all ease 0.4s;
+                }
+                .box-number {
+                    background: $light-blue;
+                    color: $white-color;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    position: absolute;
+                    left: 50%;
+                    top: -28px;
+                    transform: translateX(-50%);
+                    transition: all ease 0.4s;
+                }
+            }
+            .owp-box-text {
+                margin-top: 25px;
+                .oep-box-title {
+                    color: $white-color;
+                    margin-bottom: 25px;
+                    padding-bottom: 23px;
+                    border-bottom: 1px solid #1f3e5f;
+                    width: 100%;
+                    h3 {
+                        font-family: $quicksand-font;
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                }
+                .owp-box-description {
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 1.7;
+                        text-align: center;
+                        color: $text-color-tow;
+                        width: 100%;
+                        max-width: 260px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            a {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                font-size: 16px;
+                color: $white-color;
+                justify-content: center;
+                margin-top: 21px;
+                font-weight: 600;
+            }
+            .oep-arrow-img {
+                position: absolute;
+                top: 65px;
+                right: 0;
+                transform: translateX(50%);
+                @media (max-width: 991px) {
+                    display: none;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                    max-width: 139px;
+                }
+            }
+        }
+    }
+}
+section.meet-doctor {
+    padding: 150px 0;
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+    .meet-doctor-heading {
+        text-align: center;
+    }
+    .meet-doctor-wrapper {
+        margin-top: 70px;
+    }
+}
+section.latest-post {
+    padding: 50px 0 150px 0;
+    text-align: center;
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+}
+section.medical {
+    padding: 150px 0;
+    background: #f8f9fa;
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+    .medical-wrapper {
+        background: #fff;
+        box-shadow: 0px 2px 47.5px 2.5px rgba(36, 68, 121, 0.04);
+        border-radius: 5px;
+        text-align: center;
+        padding: 98px 60px;
+        @media (max-width: 767px) {
+            padding: 50px;
+        }
+        .medical-box {
+            img {
+                width: 100%;
+                max-width: 120px;
+                height: 110px;
+            }
+        }
+    }
+}

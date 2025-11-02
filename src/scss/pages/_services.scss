@@ -1,0 +1,106 @@
+section.services-section {
+    padding: 150px 0;
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+    .services-section-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: wrap;
+        .services-section-box {
+            width: calc(33.33% - 20px);
+            padding-bottom: 150px;
+            margin-bottom: 30px;
+            position: relative;
+            &:hover .services-section-box-img img{
+              transform: scale(1.2);
+            }
+            &:hover .services-section-box-text h3{
+              color: $light-blue;
+            }
+            @media (max-width:1199px) {
+                width: calc(50% - 20px);
+            }
+            @media (max-width:767px) {
+                width: 100%;
+                padding-bottom: 0;
+            }
+            .services-section-box-img {
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    transition: all ease .4s;
+                }
+            }
+            .services-section-box-text {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                box-shadow: 0px 15px 42.75px 2.25px rgba(39, 71, 125, 0.07);
+                background-color: $white-color;
+                text-align: center;
+                padding: 35px 30px 22px 30px;
+                transition: all ease 0.4s;
+                max-width: 320px;
+                margin-left: auto;
+                margin-right: auto;
+                @media (max-width:767px) {
+                    max-width: 100%;
+                    position: relative;
+                }
+                h3 {
+                    font-size: 24px;
+                    line-height: 1.3;
+                    margin-bottom: 15px;
+                    color: $blue-color;
+                    font-family: $quicksand-font;
+                    transition: all ease 0.4s;
+                    cursor: pointer;
+                }
+                p {
+                    font-size: 14px;
+                    color: $grey-color;
+                    margin-bottom: 6px;
+                    line-height: 1.7;
+                    font-weight: 400;
+                }
+                a {
+                    color: $light-blue;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 14px;
+                    position: relative;
+                    width: fit-content;
+                    margin:  0 auto;
+                    &:hover{
+                        color: $blue-color;
+                    }
+                    &:hover svg{
+                        fill: $blue-color;
+                    }
+                    &::before{
+                        content: "";
+                        height: 1px;
+                        background: $blue-color;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 0;
+                        transition: all ease .4s;
+                    }
+                    &:hover::before{
+                        width: 100%;
+                    }
+                    svg {
+                        fill: $light-blue;
+                    }
+                }
+            }
+        }
+    }
+}

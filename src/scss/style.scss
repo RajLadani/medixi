@@ -1,0 +1,6 @@
+@import "abstracts/variables", "abstracts/font";
+@import "base/base", "base/reset";
+@import "components/buttons", "components/carousel", "components/heading-text","components/news-box","components/testimonial-box","components/case-study-box","components/pages-banner","components/meet-doctor-box";
+@import "layout/footer", "layout/header";
+@import "pages/home","pages/about","pages/contact","pages/services","pages/services-details","pages/team","pages/team-details","pages/project","pages/appointment","pages/error","pages/shop","pages/shop-details","pages/cart","pages/checkout","pages/my-account","pages/blog","pages/blog-details";
+@import "utilities/container";

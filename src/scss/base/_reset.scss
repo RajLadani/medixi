@@ -1,0 +1,82 @@
+header .header-wrapper .header-link ul li.open-mobile-drop-down a .add-to-mobile-drop-icon .minus-icon {
+    display: block;
+}
+header .header-wrapper .header-link ul li.open-mobile-drop-down a .add-to-mobile-drop-icon .plus-icon {
+    display: none;
+}
+header .header-wrapper .header-link ul li.open-mobile-drop-down a .main-link-icon .chevron-right {
+    transform: rotate(90deg);
+}
+header .header-wrapper .header-link ul li.open-mobile-drop-down ul.sub-menu {
+    display: block;
+    height: 100%;
+    transition: all 0.4s ease-in-out 0s;
+}
+.search-popup-main.search-popup-open {
+    opacity: 1;
+    visibility: visible;
+    width: 100.1%;
+    height: 100%;
+    transition: all ease 0.4s;
+    border-radius: 0;
+}
+.services-wrapper .swiper {
+    overflow: unset;
+    overflow-x: clip;
+}
+.testimonial-wrapper .swiper {
+    position: unset;
+}
+.testimonial-wrapper .swiper-button-prev {
+    left: -70px;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 6px 37px 0px rgba(7, 204, 236, 0.2);
+    border-radius: 50%;
+    transition: all ease 0.4s;
+    opacity: 0;
+    visibility: none;
+}
+.testimonial-wrapper .swiper-button-next {
+    right: -70px;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 6px 37px 0px rgba(7, 204, 236, 0.2);
+    border-radius: 50%;
+    transition: all ease 0.4s;
+    opacity: 0;
+    visibility: none;
+}
+.testimonial-wrapper .swiper-button-next:after {
+    font-size: 15px;
+    font-weight: bold;
+}
+.testimonial-wrapper .swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 15px;
+    font-weight: bold;
+}
+section.testimonial:hover .swiper-button-prev,
+section.testimonial:hover .swiper-button-next {
+    opacity: 1;
+    visibility: visible;
+}
+section.owp .owp-heading .title-icon svg {
+    stroke: $light-blue !important;
+    background: $white-color;
+    border-radius: 50%;
+}
+.meet-doctor .swiper {
+    overflow: unset;
+    overflow-x: clip;
+}
+
+section.team-details .team-details-wrapper .team-details-dr-img .dr-media-link.show .demo a {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+    visibility: visible;
+}
+section.appointment-section .appointment-section-right .appointment-item.show .appointment-ans{
+    display: block;
+    height: 100%;
+}

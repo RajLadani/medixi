@@ -1,0 +1,57 @@
+section.project {
+    padding: 150px 0;
+    @media (max-width: 991px) {
+        padding: 50px 0;
+    }
+    .project-filter-wrapper {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        @media (max-width: 1199px) {
+            flex-flow: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        button {
+            background: $white-color;
+            border: none;
+            outline: none;
+            border-radius: 999px;
+            box-shadow: 0px 15px 42.75px 2.25px rgba(39, 71, 125, 0.07);
+            padding: 19.5px 35px;
+            font-size: 16px;
+            line-height: 1;
+            font-weight: 700;
+            color: $blue-color;
+            cursor: pointer;
+            transition: all ease 0.4s;
+            &.active{
+                background: $light-blue;
+                color: $white-color;
+            }
+            &:hover {
+                background: $light-blue;
+                color: $white-color;
+            }
+            @media (max-width: 767px) {
+                padding: 19px 20px;
+            }
+        }
+    }
+    .project-wrapper {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        .case-study-box {
+            width: calc(33.33% - 20px);
+            @media (max-width: 1199px) {
+                width: calc(50% - 20px);
+            }
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+        }
+    }
+}

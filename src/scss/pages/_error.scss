@@ -1,0 +1,31 @@
+section.error {
+padding: 150px 0;
+text-align: center;
+@media (max-width:991px) {
+    padding: 50px 0;
+}
+.error-msg{
+    h2{
+        font-size: 48px;
+        color: $blue-color;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+    p{
+        font-size: 16px;
+        color: $grey-color;
+        line-height: 1.7;
+        max-width: 494px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    butto
+    div{
+        img{
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+    }
+}
+}
