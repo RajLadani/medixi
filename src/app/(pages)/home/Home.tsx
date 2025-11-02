@@ -8,10 +8,10 @@ import SurpriseSection from "./SurpriseSection";
 import TestimonialSection from "./TestimonialSection";
 
 const HomePage = () => {
-    
+
     return (
         <>
-            <BannerSection />
+            {/* <BannerSection /> */}
             <ServicesSection />
             <SurpriseSection />
             <HospitalDetails />
