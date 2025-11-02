@@ -19,6 +19,9 @@
         padding: 34px 40px 32px 40px;
         border-top: none;
         transition: all ease 0.4s;
+        @media (max-width:767px) {
+            padding: 20px;
+        }
         .news-text-icon-main {
             display: flex;
             align-items: center;

@@ -300,6 +300,11 @@ section.appointment-section .appointment-section-right .appointment-item.show .a
   border-top: none;
   transition: all ease 0.4s;
 }
+@media (max-width: 767px) {
+  .news-box .news-box-text {
+    padding: 20px;
+  }
+}
 .news-box .news-box-text .news-text-icon-main {
   display: flex;
   align-items: center;
@@ -2340,7 +2345,7 @@ section.updates-news {
 }
 @media (max-width: 1140px) {
   section.updates-news {
-    padding: 60px 20px;
+    padding: 60px 0px;
   }
 }
 section.updates-news .updates-news-heading {
