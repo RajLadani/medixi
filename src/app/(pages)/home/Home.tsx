@@ -10,7 +10,7 @@ import TestimonialSection from "./TestimonialSection";
 const HomePage = () => {
     return (
         <>
-            {/* <BannerSection /> */}
+            <BannerSection />
             <ServicesSection />
             <SurpriseSection />
             <HospitalDetails />
