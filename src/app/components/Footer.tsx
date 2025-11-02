@@ -35,14 +35,21 @@ const FooterMain = () => {
     { day: "Saturday", hours: "9:00 am - 6:00 pm" },
     { day: "Sunday", hours: "9:00 am - 6:00 pm" },
   ];
-  const ContactItem = ({ icon, text, link }) => (
+  const ContactItem = ({ icon, text, link }:{
+    icon: any;
+    text: any;
+    link: any;
+  }) => (
     <Link href={link} className="contact-item">
       <div className="icon">{icon}</div>
       <h4>{text}</h4>
     </Link>
   );
 
-  const ServiceItem = ({ text, link }) => (
+  const ServiceItem = ({ text, link }:{
+     text: any;
+    link: any;
+  }) => (
     <div className="service-item">
       <ChevronRight />
       <Link href={link}>{text}</Link>

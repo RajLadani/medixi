@@ -74,7 +74,7 @@ const Checkout = () => {
                             <div className="checkout-right">
                                 <h3>Additional information</h3>
                                 <p>Order notes (optional)</p>
-                                <textarea name="order_comments" placeholder="Notes about your order, e.g. special notes for delivery." rows="8" cols="5"></textarea>
+                                <textarea name="order_comments" placeholder="Notes about your order, e.g. special notes for delivery." rows={8} cols={5}></textarea>
                             </div>
                         </div>
                         <div className="your-order-wrapper">

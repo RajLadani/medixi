@@ -14,7 +14,7 @@ import { useState, useEffect } from 'react';
 const TopHeader = () => {
     const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
-    const toggleDropdown = (event) => {
+    const toggleDropdown = (event:any) => {
         event.stopPropagation(); // Prevents the event from bubbling to the body
         setIsDropdownVisible(!isDropdownVisible);
     };

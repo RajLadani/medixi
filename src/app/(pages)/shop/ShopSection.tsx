@@ -122,7 +122,7 @@ const ShopSection = () => {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const displayedProducts = dummyProducts.slice(startIndex, startIndex + itemsPerPage);
 
-    const handlePageChange = (newPage) => {
+    const handlePageChange = (newPage:any) => {
         if (newPage >= 1 && newPage <= totalPages) {
             setCurrentPage(newPage);
         }

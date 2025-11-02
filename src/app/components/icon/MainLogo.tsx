@@ -10,7 +10,7 @@ const MainLogo = () => {
             x="0px"
             y="0px"
             viewBox="0 0 491 149"
-            style={{ enableBackground: "new 0 0 491 149" }}
+            style={{ ['enable-background' as any]: "new 0 0 491 149" }}
             xmlSpace="preserve"
             className="logo-img replaced-svg"
         >

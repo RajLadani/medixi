@@ -2,7 +2,12 @@ import RightArrowIcon from "@/app/components/icon/RightArrowIcon";
 import Image from "next/image";
 import Link from "next/link";
 
-const ServicesSectionBox = ({ imageSrc, title, description, link }) => {
+const ServicesSectionBox = ({ imageSrc, title, description, link }:{
+      imageSrc: any;
+    title: any;
+    description: any;
+    link: any;
+}) => {
     return (
         <div className="services-section-box">
             <div className="services-section-box-img">

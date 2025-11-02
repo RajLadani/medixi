@@ -11,7 +11,7 @@ import LocationIcon from "@/app/components/icon/LocationIcon";
 const ContactPage = () => {
     const [activeInput, setActiveInput] = useState(null);
 
-    const handleFocus = (index) => {
+    const handleFocus = (index:any) => {
         setActiveInput(index);
     };
 
@@ -79,8 +79,8 @@ const ContactPage = () => {
                             </div>
                             <div className="contact-us-msg">
                                 <textarea
-                                    rows="10"
-                                    cols="40"
+                                    rows={10}
+                                    cols={40}
                                     name="comment"
                                     placeholder="Message"
                                 />

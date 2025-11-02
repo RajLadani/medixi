@@ -1,7 +1,11 @@
 import Image from "next/image";
 import EyeIcon from "./icon/EyeIcon";
 
-const CaseStudyBox = ({ image, title, description }) => {
+const CaseStudyBox = ({ image, title, description }:{
+     image: any;
+    title: any;
+    description: any;
+}) => {
     return (
         <div className="case-study-box">
             <div className="case-study-img">

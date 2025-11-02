@@ -4,7 +4,9 @@ import RatingStarSolid from "@/app/components/icon/RatingStarSolid";
 import SearchIcon from "@/app/components/icon/SearchIcon";
 import Image from "next/image";
 
-const ShopBox = ({ product }) => {
+const ShopBox = ({ product }:{
+    product:any
+}) => {
     return (
         <div className="shop-box">
             <div className="shop-box-img">

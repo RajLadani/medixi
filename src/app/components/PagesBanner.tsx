@@ -1,7 +1,11 @@
 import Link from "next/link";
 import HomeIcon from "./icon/HomeIcon";
 
-const PagesBanner = ({ title, currentPage, breadcrumbLinks = [] }) => {
+const PagesBanner = ({ title, currentPage, breadcrumbLinks = [] }:{
+     title: any;
+    currentPage: any;
+    breadcrumbLinks?: object[] | undefined;
+}) => {
     return (
         <>
             <section className="pages-banner">
@@ -15,7 +19,7 @@ const PagesBanner = ({ title, currentPage, breadcrumbLinks = [] }) => {
                 <div className="pages-banner-box">
                     <div className="pages-banner-box-link-main">
                         <Link href={"/"}>Home</Link>
-                        {breadcrumbLinks.map((link, index) => (
+                        {breadcrumbLinks.map((link:any, index) => (
                             <span key={index}>
                                 <span style={{ marginRight: "10px" }}>/</span>
                                 <Link href={link.href}>{link.label}</Link>

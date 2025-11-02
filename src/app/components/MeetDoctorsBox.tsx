@@ -5,7 +5,9 @@ import BasketBallIcon from "./icon/BasketBall";
 import PhoneIcon from "./icon/PhoneIcon";
 import MailIcon from "./icon/MailIcon";
 
-const MeetDoctorsBox = ({ doctor }) => {
+const MeetDoctorsBox = ({ doctor }:{
+    doctor: any;
+}) => {
     return (
         <div className="meet-doctors-box">
             <div className="meet-doctors-box-img">

@@ -45,7 +45,7 @@ const ItemsDetails = () => {
         width: '132px',
     });
 
-    const handleTabClick = (tab) => {
+    const handleTabClick = (tab:any) => {
         setActiveTab(tab);
         if (tab === 'description') {
             setIndicatorStyle({ left: '476px', width: '132px' });
@@ -226,7 +226,7 @@ const ItemsDetails = () => {
                                     <div className="rating-name-star">
                                         <div className="rating-name">Medilax</div>
                                         <div className="rating-star">
-                                            {Array(5).fill().map((_, index) => (
+                                        {Array(5).fill(0).map((value, index) => (
                                                 <RatingStarSolid key={index} />
                                             ))}
                                         </div>
@@ -243,13 +243,13 @@ const ItemsDetails = () => {
                                 <p>Your email address will not be published. Required fields are marked *</p>
                                 <div className="your-reviews">
                                     Your Rating 
-                                    {Array(5).fill().map((_, yourrating) => (
+                                    {Array(5).fill(0).map((_, yourrating) => (
                                         <RatingStarRegular key={yourrating}/>
                                     ))}
                                 </div>
                             </div>
                             <div className="reviews-text">
-                                <textarea placeholder="Write your comments" rows="8" cols="5" name="comment"></textarea>
+                                <textarea placeholder="Write your comments" rows={8} cols={5} name="comment"></textarea>
                             </div>
                             <div className="reviews-name-mail-main">
                                 <div className="reviews-name">

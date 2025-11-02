@@ -4,7 +4,9 @@ import UserIcon from "./icon/UserIcon";
 import Link from "next/link";
 import RightArrowIcon from "./icon/RightArrowIcon";
 
-const NewsBox = ({ news }) => {
+const NewsBox = ({ news }:{
+    news:any
+}) => {
     return (
         <div className="news-box">
             <div className="news-box-img">

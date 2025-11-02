@@ -2,7 +2,13 @@ import Image from "next/image";
 import RatingStarSolid from "./icon/RatingStarSolid";
 import RatingStarRegular from "./icon/RatingStarRegular";
 
-const TestimonialBox = ({ text, name, position, avatar, rating }) => {
+const TestimonialBox = ({ text, name, position, avatar, rating }:{
+     text: any;
+    name: any;
+    position: any;
+    avatar: any;
+    rating: any;
+}) => {
     return (
         <div className="testimonial-box">
             <div className="testimonial-content">

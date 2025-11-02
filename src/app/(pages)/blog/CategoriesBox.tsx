@@ -1,6 +1,8 @@
 import ChevronRight from "@/app/components/icon/Chevronright";
 
-const CategoriesBox = ({ data }) => {
+const CategoriesBox = ({ data }:{
+    data:any
+}) => {
     return (
         <div className="categories-box">
             <div className="categories-box-text">

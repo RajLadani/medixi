@@ -9,6 +9,12 @@ const Button = ({
     showChevron = false,
     onClick,
     href = '#'
+}:{
+     text?: string | undefined;
+    variant?: string | undefined;
+    showChevron?: boolean | undefined;
+    onClick?: any;
+    href?: string | undefined;
 }) => {
     const router = useRouter();
 

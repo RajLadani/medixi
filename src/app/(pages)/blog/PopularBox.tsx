@@ -2,7 +2,9 @@ import CalendarIcon from "@/app/components/icon/CalendarIcon";
 import Image from "next/image";
 import Link from "next/link";
 
-const PopularPostBox = ({ data }) => {
+const PopularPostBox = ({ data }:{
+    data:any
+}) => {
     return (
         <div className="popular-post-box">
             <div className="popular-pot-box-img">

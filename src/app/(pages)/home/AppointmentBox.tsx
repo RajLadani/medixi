@@ -9,7 +9,7 @@ import UserIcon from "@/app/components/icon/UserIcon";
 const AppointmentBox = () => {
     const [activeIndex, setActiveIndex] = useState(null);
 
-    const handleFocus = (index) => {
+    const handleFocus = (index:any) => {
         setActiveIndex(index);
     };
 
@@ -37,7 +37,7 @@ const AppointmentBox = () => {
                         { placeholder: "Email Address", type: "email" },
                         { placeholder: "Your Phone", type: "tel" },
                         { placeholder: "YY/MM/DD", type: "date" },
-                    ].map((field, index) => (
+                    ].map((field:any, index) => (
                         <div
                             key={index}
                             className={`appointment-from-input-main ${activeIndex === index ? "active-input" : ""}`}
@@ -47,7 +47,7 @@ const AppointmentBox = () => {
                             <div className="appointment-input-type">
                                 {field.type === "select" ? (
                                     <select id="input-tags">
-                                        {field.options.map((option, idx) => (
+                                        {(field.options??[]).map((option:any, idx:any) => (
                                             <option value={option} key={idx}>{option}</option>
                                         ))}
                                     </select>
